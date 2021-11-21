@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/:id', async(req, res) => {
-    const task = await Task.findById(re.params.id);
+    const task = await Task.findById(req.params.id);
     res.json(task);
 });
 
