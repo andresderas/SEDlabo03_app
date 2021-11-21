@@ -94,7 +94,7 @@ class App extends Component {
         const { name, value } = e.target;
         this.setState({
             [name]:value
-        })
+        });
     }
 
     render() {
@@ -149,10 +149,10 @@ class App extends Component {
                                                     <td>{task.name}</td>
                                                     <td>{task.username}</td>
                                                     <td>
-                                                        <button className="blue darken-4" onClick={() => this.deleteTask(task.id)}>
+                                                        <button className="blue darken-4" onClick={() => this.deleteTask(task._id)}>
                                                             <i className="material-icons">delete</i>
                                                         </button>
-                                                        <button onClick={() => this.editTask(task.id)} className="blue darken-4" style={{margin: '4px'}}>
+                                                        <button onClick={() => this.editTask(task._id)} className="blue darken-4" style={{margin: '4px'}}>
                                                             <i className="material-icons">edit</i>
                                                         </button>
                                                     </td>
