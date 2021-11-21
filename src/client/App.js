@@ -101,14 +101,14 @@ class App extends Component {
         return(
             <div>
                 <nav className="blue darken-4">
-                    <div className="container">
-                        <a className="brand-logo" href="/">User Manager</a>
+                    <div className="container center">
+                        <a className="brand-logo center " href="/">User Manager</a>
                     </div>
                 </nav>
 
                 <div className="container">
                     <div className="row">
-                        <div className="col s5">
+                        <div className="col s12">
                             <div className="card">
                                 <div className="card-content">
                                     <form onSubmit={this.addTask}>
@@ -133,7 +133,7 @@ class App extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="col s7">
+                        <div className="col s12">
                             <table>
                                 <thead>
                                     <tr>
